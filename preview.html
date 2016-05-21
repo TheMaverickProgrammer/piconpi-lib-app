@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PiCon Pi Game Library</title>
+
+	<link rel="stylesheet" href="./css/jquery.flipster.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body style="max-width:480px; max-height:320px; ">
+
+	<div style="display: inline-block; width: 100%;">
+		<img id="card" style="width:288px; height: 105px;">
+		<p class="name" style="width: auto"></p>
+	</div>
+
+	<div>
+		<p class="genre"></p>
+		<br />
+		<div class="desc"></div>
+	</div>
+
+	<br />
+
+	<center>
+		<button id="btnPlay">play</button>
+	</center>
+
+	<script src="./js/jquery.min.js"></script>
+	<!--<script src="./js/script.js"></script>-->
+	<script>
+		$(".desc").html(localStorage.getItem("desc"));
+		$(".name").html(localStorage.getItem("name"));
+		$(".genre").html(localStorage.getItem("genre"));
+		$("#card").attr("src", localStorage.getItem("card"));
+		$("#btnPlay").on("click", function() {
+			location.href = localStorage.getItem("href");
+		})
+	</script>
+</body>
+</html>

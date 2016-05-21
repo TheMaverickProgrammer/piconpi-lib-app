@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PiCon Pi Game Library</title>
+
+	<link rel="stylesheet" href="./css/jquery.flipster.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/sweetalert.css">
+	<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body style="max-width:480px; max-height:320px; ">
+
+	<img id="splash" src="./1.jpg" style="width:480px; height: 320px">
+
+	<p class="stats"></p>
+
+	<div id="flipster" class="flipster">
+		<ul>
+		</ul>
+	</div>
+
+	<audio autoplay loop id="audio-menu">
+	    <source src="./media/ambient.ogg">
+	</audio>
+
+	<audio id="audio-nav">
+			<source src="./media/navigate.ogg">
+	</audio>
+
+	<audio id="audio-select">
+			<source src="./media/make_selection.ogg">
+	</audio>
+
+	<audio id="audio-alert">
+			<source src="./media/alert.ogg">
+	</audio>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.flipster.min.js"></script>
+	<script src="./js/sweetalert.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
